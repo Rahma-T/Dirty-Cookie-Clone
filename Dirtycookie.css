@@ -1,0 +1,598 @@
+body{
+  margin: 0;
+  font-family: "Helvetica Neue LT W01 45 Light";
+}
+header{
+  height: 214px;
+  background-color:rgb(236,124,213);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.upper-header-section{
+  background-color: rgb(75,4,61);
+  color: rgb(255,255,255);
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0 14px 0;
+  display: block;
+  margin-top: 9px;
+}
+.middle-header-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:24px 50px 0 0 ;
+}
+.dirtycookie-logo{
+  margin: 0 20px 10px 0;
+}
+.search-bar{
+  height: 40px;
+  width: 750px;
+  border-radius: 20px;
+  border: none;
+  background-color:rgb(243,194,245);
+  font-size: 16px;
+  transition: 0.15s;
+  padding-left: 36px;
+}
+.search-bar-container{
+  position: relative;
+}
+.magnifying-img{
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: rgb(75,4,61);
+}
+.search-bar:hover{
+  background-color: rgb(255, 228, 236);
+}
+.search-bar-container:hover .magnifying-img{
+  color: blue;
+}
+.search-bar:focus{
+  outline:none;
+}
+.search-bar::placeholder{
+  color: rgb(75,4,61);
+  font-family: 'Futura LT', sans-serif;
+}
+.cart-items-container{
+  position: relative;
+}
+.shoppingbag-img{
+  height: 30px;
+  margin:12px 0 0 40px ;
+}
+.cart-items{
+  position: absolute;
+  font-family: 'Futura LT', sans-serif;
+  color: rgb(255,255,255);
+  font-size: 11px;
+  left: 48px;
+  top: 25px;
+}
+.lower-header-section{
+  display: flex;
+  justify-content: center;
+  margin-left: 45px;
+}
+.bottom-header-text{
+  margin-right: 38px;
+  color: rgb(39, 33, 30);
+  font-family: 'Futura LT', sans-serif;
+  transition-duration: 0.15s;
+}
+.bottom-header-text:hover{
+  color: white;
+}
+.tooltip-container{
+  position: relative;
+  transition: 0.3s;
+}
+.orders-tooltip{
+  display: none;
+  position: absolute;
+  left: -40px;
+  top: 40px;
+  color: black;
+  padding: 6px 14px;
+  background-color: white;
+  text-wrap: nowrap;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+}
+.tooltip-container:hover .orders-tooltip{
+  display: block;
+}
+.shoppingbag-img, 
+.dirtycookie-logo, 
+.bottom-header-text,
+.cart-items,
+.shop-all-button,
+.check-blog-button,
+.cookie-button,
+.menu-item-container,
+.contacting-pointer,
+.main-coloum-grid,
+.load-more-button,
+.join-button{
+  cursor: pointer;
+}
+.starting-page{
+  margin-top: 199px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255,197,255);
+  width: 100%;
+  padding-bottom: 150px;
+}
+.eyecatcher-phrase-div{
+  padding: 10px 0 0 15px;
+}
+.cookieimg-div{
+  margin-left:50px;
+  padding-bottom: 5px;
+}
+.catch-phrase{
+  font-family: 'Futura LT', sans-serif;
+  color: rgb(39, 33, 30);
+  font-size: 35px;
+  line-height: 14px;
+}
+.chaser-phrase{
+  font-family: 'Futura LT', sans-serif;
+  font-size: 20px;
+  line-height: 12px;
+  color: rgb(39, 33, 30);
+}
+.bottom-chaser-phrase{
+  font-size: 18px;
+}
+.scooter-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.scooter-img{
+  margin-left: 10px;
+}
+.cookie-button{
+  font-family: "Helvetica Neue LT W01 45 Light";
+  color: white;
+  background-color: rgb(226,12,183);
+  border: 1px solid rgb(226,12,183);
+  margin-left: 60px;
+  font-size: 15px;
+  padding-left: 10px;
+  height: 38px;
+  width: 195px;
+  border-radius: 20px;
+  letter-spacing: 1.5px;
+  box-shadow: 1px 4px 2px rgb(224, 122, 204);
+  transition: 0.15s;
+}
+.cookie-button:hover{
+  background-color: rgb(247, 166, 230);
+  color:rgb(226,12,183) ;
+}
+.associates-banner{
+  background-image: linear-gradient(to right, rgb(243,209,250),rgb(249,223,250),
+  rgb(246,190,238),rgb(249,223,250),rgb(227,159,240));
+  padding-bottom: 30px;
+}
+.banner-imgs-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bannerimgs{
+  margin: 0 70px 0 100px ;
+}
+.banner-text{
+  font-family: "helvetica-w01-light", sans-serif;
+  margin: 0 28px 0 0;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 2px;
+  word-spacing: 8px;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+  padding: 18px 0 15px 0;
+}
+.menu-grid{
+  display: grid;
+  grid-template-columns: 314px 314px 314px;
+  column-gap: 20px;
+  row-gap: 49px;
+  place-content: center;
+  margin: 48px 0 40px 0;
+}
+.menuitem-description-box{
+  font-family: "Helvetica Neue LT W01 45 Light";
+  color: rgb(39, 33, 30);
+}
+.shop-all-button{
+  font-family: 'Futura LT', sans-serif;
+  color: white;
+  background-color: rgb(226,12,183);
+  border: 2px solid rgb(227,172,218);
+  font-size: 18px;
+  height: 40px;
+  width: 140px;
+  font-weight: 200;
+  border-radius: 20px;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  display: block ;
+  margin: 0 auto;
+}
+.shop-all-button:hover{
+  background-color: white;
+  border-color: rgb(226,12,183);
+  color:rgb(39, 33, 30);
+}
+.quality-text-div{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+}
+.quality-text{
+  margin: 0 0 10px 0;
+}
+.qa-grid{
+  display: grid;
+  grid-template-columns: 278px 278px 278px;
+  place-content: center;
+  column-gap: 78px;
+  margin-top: 100px;
+}
+.img{
+  margin-left: 80px;
+}
+.attribute-description{
+  text-align: center;
+}
+.attribute-header{
+  font-size: 25px;
+  margin: 50px 0 10px 0;
+}
+.attribute-text{
+  font-size: 16px;
+  color: rgb(82,14,69);
+  margin: 0 0 10px 0;
+}
+.reviews-grid{
+  display: grid;
+  place-content: center;
+  grid-template-columns: 400px 400px 400px;
+  text-align: center;
+  column-gap: 50px;
+  margin-top: 160px;
+}
+.cx-product-name{
+  font-size: 23px;
+  line-height: 5px;
+}
+.review-content{
+  font-size: 20px;
+}
+.reviewtext{
+  margin-top: 80px;
+}
+.bottom-review-text{
+  margin-top: 35px;
+  line-height: 15px;
+}
+.check-blog-button{
+  height: 45px;
+  width: 239px;
+  border-radius: 30px;
+  padding:0 0 0 20px;
+  letter-spacing: 4px;
+  text-align: left;
+  border: none;
+  background-color: rgb(236,124,213);
+  color:rgb(39, 33, 30);
+  position: relative;
+  margin-top: 25px;
+  text-align: left;
+  transition: 0.15s;
+}
+.arrow-button{
+  position: absolute;
+  left: 180px;
+  top: 6px;
+  width: 37px;
+  fill:rgb(39, 33, 30);
+}
+.check-blog-button:hover{
+ background-color:rgb(82,14,69);
+ color: white;
+}
+.check-blog-button:hover .arrow-button{
+  fill: white;
+}
+.check-the-blog-statement{
+  font-size: 35px;
+  color: white;
+  margin: 10px 0 0 0;
+}
+.check-our-blog-section{
+  background-color: rgb(82,14,69);
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
+}
+.contact-us-page-grid{
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  place-content: center;
+  column-gap: 70px;
+  margin: 10px 40px 70px 0 ;
+}
+.contact-us-statment{
+  font-size: 56px;
+  text-align: center;
+  margin: 80px 0 30px 0;
+}
+.contacting-category-description{
+  font-size: 16px;
+  color: rgb(39, 33, 30);
+  line-height: 20px;
+  margin-top: 0;
+}
+.contacting-category-text{
+  font-size: 26px;
+}
+.days-and-times-grid{
+  display: grid;
+  grid-template-columns: 110px 140px;
+}
+.socials-img{
+  margin-right: 8px;
+}
+.map{
+  margin: auto;
+  display: block;
+}
+.latest-news-box{
+  background-color: rgb(82,14,69);
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 8px;
+  margin-top: 60px;
+}
+.latest-news-statment{
+  margin: 6px 0 0 0;
+}
+.dirtycookie-website-name{
+  font-size: 24px;
+  text-align: center;
+  color: rgb(39, 33, 30);
+  margin-top: 40px;
+}
+.imgs-grid{
+  display: grid;
+  grid-template-columns: 367px 176px 367px;
+  place-content: center;
+  column-gap: 15px;
+  margin-bottom: 60px;
+}
+.normal-size-grid{
+  display: grid;
+  grid-template-columns: 176px 176px;
+  column-gap: 15px;
+}
+.double-size-grid{
+  height: 367px;
+  position: relative;
+}
+.main-coloum-grid{
+  display: grid;
+  row-gap: 15px;
+}
+.video2-container, 
+.video1-container, 
+.center-coloum-pic-grid{
+  height: 176px;
+}
+
+.double-size-img{
+  height: 367px;
+  width: 367px;
+}
+.normal-sized-img{
+  height: 176px;
+  width: 176px;
+}
+.gallery-svg-container,
+.video-svg-container{
+  position: relative;
+  height: 176px;
+  
+}
+.gallery-svg, 
+.video-svg{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  fill: white;
+  right: 12px;
+  top: 12px;
+  padding: 2px 8px;
+}
+.hidden-sentence{
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  transition: 0.3s;
+}
+.hidden-big-img3-hover{
+  left: 0;
+  right: 0;
+  padding: 130px 0 122px 0;
+}
+.hidden-big-img5-hover{
+  left: 0;
+  right: 0;
+  padding: 155px 0 128px 0;
+}
+.small-imgs-hover{
+  left: 0;
+  right: 0;
+  padding: 18px 0;
+}
+.gallery-svg-container:hover .hidden-sentence,
+.video-svg-container:hover .hidden-sentence{
+  opacity: 1;
+}
+.load-more-button{
+  font-family: 'Futura LT', sans-serif;
+  color: white;
+  background-color: rgb(226,12,183);
+  border: 2px solid rgb(227,172,218);
+  font-size: 18px;
+  padding: 8px 25px;
+  border-radius: 20px;
+  transition: 0.5s;
+  display: block;
+  margin: 0 auto;
+}
+.load-more-button:hover{
+  background-color: white;
+  border-color: rgb(226,12,183);
+  color:rgb(39, 33, 30);
+}
+.Subscription-statment{
+  font-size: 18px;
+  text-align: center;
+  margin-top: 150px;
+}
+.email-input-bar{
+  display: flex;
+  justify-content: center;
+}
+.input-email-box{
+  font-size: 14px;
+  height: 50px;
+  width: 400px;
+  padding-left: 24px;
+  background-color:white;
+  border: 1px solid rgb(226,12,183);
+  border-right-color: white;
+}
+.input-email-box:focus{
+  outline: none;
+}
+.input-email-box::placeholder{
+  color: rgb(226,12,183);
+}
+.join-button{
+  font-size: 18px;
+  width: 60px;
+  height: 54px;
+  color: white;
+  background-color: rgb(226,12,183);
+  border: 1px solid rgb(226,12,183);
+  transition: 0.3s;
+}
+.join-button:hover{
+  background-color: white;
+  color:rgb(226,12,183) ;
+}
+.main-footer-grid{
+  display: grid;
+  background-color:rgb(82,14,69) ;
+  margin-top: 100px;
+  padding: 10px 0 0 190px;
+}
+.site-logo-name{
+  display: flex;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+}
+.site-logo-name img{
+  margin-right: 20px;
+  width: 78px;
+  height: 56px;
+}
+.nav-category{
+  font-size: 22px;
+  font-family: 'Futura LT', sans-serif;
+  color: white;
+  text-align: center;
+}
+.nav-content{
+  color: white;
+  font-family: 'Futura LT', sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+.footer-nav-grid{
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  margin-left: 35px;
+}
+.socials-pics{
+  margin-left: 50px;
+}
+.socials-pics img{
+  margin-right: 10px;
+}
+.site-making-credits{
+  font-size: 14px;
+  color: white;
+  font-family: 'Futura LT', sans-serif;
+  background-color:rgb(82,14,69) ;
+  text-align: center;
+  margin: 50px 230px 5px 0;
+}
+.fixed-chat-button{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  height: 56px;
+  width: 200px;
+  font-size: 18px;
+  font-family: "Helvetica W01 Roman";
+  font-weight: 100;
+  color: white;
+  background-color:rgb(226,12,183) ;
+  border: none;
+  border-radius: 40px;
+  align-items: center;
+  z-index: 3;
+  cursor: pointer;
+}
+.fixed-chat-button p{
+  margin: 4px 0 0 10px;
+  display: inline-block;
+}
+.fixed-button-contents{
+  display: flex;
+  justify-content: center;
+}
+.notification-no{
+  position: absolute;
+  left: -7px;
+  top: -5px;
+  background-color: rgb(235,0,27);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 4px 7px 4px 7px;
+  font-size: 11px;
+  border-radius: 30px;
+}

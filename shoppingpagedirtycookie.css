@@ -1,0 +1,18 @@
+.online-ordering{
+  margin-top: 214px;
+  position: relative;
+  left: -8px;
+}
+.online-ordering-text{
+  font-family: 'HelveticaNeueLTW01-55Roman', cursive;
+}
+.headertext{
+  font-size: 48px;
+  margin: 0;
+}
+.emptygreendiv{
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  display: inline-block;
+}
